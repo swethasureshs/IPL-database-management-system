@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<title>ADD PLAYER</title>
+<head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;;
+
+    margin-top: 6px    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body style="background-color:#ffb3ff">
+<button><a href="hpadmin.html">Back</a></button>
+<h3>Add Player</h3>
+<div class="container">
+  <form action="http://localhost//addplayer.php" method="post">
+
+    <label for="Playername">Player Name</label>
+    <input type="text" name="playername" placeholder="Enter Player Name..">
+
+   
+    <label for="age">Age</label>
+    <input type="number" name="age" placeholder="Player Age..">
+
+     <label for="type">Skill</label>
+    <select id="text" name="skill" placeholder="player type">
+      <option value="Batsman">Batsman</option>
+      <option value="Bowler">Bowler</option>
+      <option value="All-rounder">All-Rounder</option>
+       <option value="Wicketkeeper batsman">Wicketkeeper Batsman</option>
+    </select>
+
+ <label for="jersey number">Jersey number</label>
+    <input type="number" name="jerseynumber" placeholder="Jersey number">
+
+<label for="Nationality">Nationality</label>
+    <input type="text" name="Nationality" placeholder="Nationality">
+
+     <label for="no_of_matches">Matches played</label>
+    <input type="number" name="no_of_matches" placeholder="Number of Matches Played..">
+
+ <label for="team">Team</label>
+    <input type="number" name="team" placeholder="Team number">
+    <input type="submit" style="float:left;" value="Submit"><button style="float:right;" ><a href="admin.html">Logout</a></button>
+  </form>
+</div>
+</body>
+</html>

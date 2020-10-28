@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<title>ADD SCHEDULE</title>
+<head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body style="background-color:#ffb3ff">
+<button><a href="hpadmin.html">Back</a></button>
+<h3>Add Schedule</h3>
+<div class="container">
+  <form action="http://localhost//addschedule.php" method="post">
+    
+     <label for="match_no">Match No</label>
+    <input type="number" name="match_no" placeholder="Match number..">
+
+     <label for="date">Date</label>
+    <input type="date" name="date" placeholder="Date..">
+
+    <label for="team1">Team1 Name</label>
+    <select id="text" name="team1" placeholder="team1">
+      <option value="">Choose a Team</option>
+      <option value="Chennai Super Kings">Chennai Super Kings</option>
+      <option value="Delhi Capitals">Delhi Capitals</option>
+      <option value="Kings XI Punjab">Kings XI Punjab</option>
+       <option value="Mumbai Indians">Mumbai Indians</option>
+      <option value="Rajasthan Royals">Rajasthan Royals</option>
+      <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+      <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+       <option value="Sunrises Hyderabad">Sunrises Hyderabad</option>
+    </select>
+
+    <label for="team2">Team2 Name</label>
+   <select id="text" name="team2" placeholder="team2">
+      <option value="">Choose a Team</option>
+      <option value="Chennai Super Kings">Chennai Super Kings</option>
+      <option value="Delhi Capitals">Delhi Capitals</option>
+      <option value="Kings XI Punjab">Kings XI Punjab</option>
+       <option value="Mumbai Indians">Mumbai Indians</option>
+      <option value="Rajasthan Royals">Rajasthan Royals</option>
+      <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+      <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+       <option value="Sunrises Hyderabad">Sunrises Hyderabad</option>
+    </select>
+
+    <input type="submit" style="float:left;" value="Submit"><button style="float:right;" ><a href="admin.html">Logout</a></button>
+  </form>
+</div>
+</body>
+</html>

@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL ^ E_NOTICE);?>
-<?php
 
     $con = mysqli_connect("localhost","root","","ipldb");
     if ($conn->connect_error) {
@@ -28,7 +26,6 @@ error_reporting(E_ALL ^ E_NOTICE);?>
 
     else
     {
-     // echo "<script type='text/javascript'>alert('Logged in successfully!!');</script>";
       header("refresh: 0.01; url=hpadmin.html");
     }
 ?>
